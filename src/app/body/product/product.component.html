@@ -1,0 +1,16 @@
+<h1>
+  welcome To {{name}}
+</h1>
+<div class="container">
+    <a routerLink="/Java">Back</a>
+   <h2>AddNewProduct</h2>
+   <form #ProductData="ngForm" (ngSubmit)="addNewProduct(ProductData.value)" >
+       <label>Name:</label>
+       <input type="text" name="name" class="form-control" placeholder="Name" ngModel>
+       <label>Color:</label>
+       <input type="text" name="color" class="form-control" placeholder="Color" ngModel><br/>
+       <input type="submit" value="AddProduct">
+   </form>
+   <br>
+   <h3 *ngIf="isAdded">{{confirmationString}}</h3>
+</div>

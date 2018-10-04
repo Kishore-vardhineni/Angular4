@@ -1,0 +1,21 @@
+.sidebarContent{
+    text-align:center;
+    font-size:large;
+    min-height:400px;
+    width: 200px;
+    margin-bottom:10px;
+}
+.image{
+    padding:10px;
+    position: fixed;
+    top: 30%;
+    left: 10px;
+}
+.mainContent{
+    text-align:center;
+    font-size:large;
+    min-height:700px;
+    margin-left:50px;
+    width:1100px;
+    margin: 20px;
+}

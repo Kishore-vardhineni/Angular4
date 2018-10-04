@@ -1,0 +1,240 @@
+<h1>
+  Welcome To {{name}}
+</h1>
+
+<div class="container">
+   <div id="accordion">
+       <div class="card">
+           <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  1) What is Single Page Application?
+              </a>
+           </div>
+           <div id="collapseOne" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                   A single-page application (SPA) is a website that re-renders its content in response to navigation actions (e.g. clicking a link) without making a request to the server to fetch new HTML.<br>
+                   <b>Pros of the Single-Page Application:</b><br>SPA is fast, as most resources (HTML+CSS+Scripts) are only loaded once throughout the lifespan of application. Only data is transmitted back and forth.<br>SPA can cache any local storage effectively. An application sends only one request, store all data, then it can use this data and works even offline.<br>It’s easier to make a mobile application because the developer can reuse the same backend code for web application and native mobile application.
+               </div>
+           </div>
+       </div>
+
+       <div class="card">
+           <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                  2) What is Angular2?Advantages and Disadvantages?
+              </a>
+           </div>
+           <div id="collapseTwo" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                  Angular2 is a TypeScript-based front-end web application platform.<br>-->It was developed by the Google and version was released on September 14, 2016.<br>--> Angular is a complete rewrite from the same team that built AngularJS.<br/>
+                  <b>Advantages:</b><br>
+                 --> Component-based architecture that provides a higher quality of code,Reusability,Maintainability.<br>--> Hierarchical dependency injection is possible using Angular.<br>--> Angular is written using TypeScript language, which is basically a superset for JavaScript.<br/>--> High Performance:Multiple factors can help in making your application faster.<br>-->The main boost is ensured by hierarchical dependency injection and Angular Universal support.<br>--> Angular 2 is oops based framework. One can take advantages of oops programming architecture.    
+               </div>
+           </div>
+       </div>
+       
+       <div class="card">
+          <div class="card-header">
+             <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                3)What is NPM?
+             </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                -->NPM Standsfor Node package manager.<br>-->NPM is a package manager for Node js Modules that helps developers to share and reuse code very easily.<br>-->npm consists of three distinct components.<br>i)the website<br>ii)the Command Line Interface (CLI).<br>iii)the registry
+                   i)The website use  to discover packages, set up profiles, and manage other aspects of your npm experience. <br>
+                   1)For example, you can set up Orgs (organizations) to manage access to public or private packages.<br>2)The CLI runs from a terminal. This is how most developers interact with npm.<br>3)The registry is a large public database of JavaScript software and the meta-information surrounding it.
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                  4)What is CLI? what are the steps to setup AngularCli?
+              </a>
+          </div>
+          <div id="collapseFour" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                  <b>CLI:</b>The CLI runs from a terminal. This is how most developers interact with npm<br>
+                  <b>AngularCli:</b>It is a Command Line Interface to scaffold and build angular apps using nodejs style modules and it is used for creating big angular projects.<br>
+                  <b><u>AngularCli Environment Setup:</u></b><br>--> First we need to install nodejs.<br>--> installing the angular cli by --npm install -g @angular/cli.<br>--> creating the new project by ng new projectname.<br>--> to compile and project we use ng serve --open
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+             <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                 5) What are the core concepts of Angular?
+             </a>
+          </div>
+          <div id="collapseFive" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                --> <b>Components:</b> component is a simple class which is associated with angular template and business logic.<br>--> <b>Templates:</b> HTML File which contains design logic to display along with Angular API.<br>--> <b>Modules:</b> Modules are similar to packages in other programming languages.<br>--> <b>Data binding:</b> Data binding is communication between component to view page.<br>--> <b>Directives:</b> directives are used for manuplation of DOM.<br>--> <b>Dependency injection:</b> Dependency injection means inject the objects into other components.<br>--> <b>services:</b> services are business logic an also to communicate with server side technologies.<br>--> <b>Pipes:</b> pipes are used to format the data.<br>--> <b>Routing:</b> Routing is navigating from one component to other component.
+              </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                  6) What is Module/NgModule in Angular?
+              </a>
+          </div>
+          <div id="collapseSix" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                 --> modules are blocks of code which are used for doing specific task.<br>--> Angular modules consolidates components,directives,pipes,services and modules into cohesive blocks of functionality.<br>--> it is similar to packages in other programming languages like java.<br>--> Every angular app has atleast one module, the root module,convenctionally named app module.<br>--> @NgModule annotation is what actually defines the module.<br>
+                 <b>It consists of three types:</b><br><b>i)Declarations:</b><br>we can list the components,directives,pipes that are part of the modules in the declaration way.<br><b>ii)Imports:</b><br>we can import other modules by listing them in the import array<b><br>iii)Providers:</b><br>we can list the services that are part of the module in the providers array.<br>
+                <b>syntax:</b><br>@Ngmodule((<br><b>declarations:</b>[ <br>app component,<br>component1,component2,----etc,<br>directive1,directive2,-----etc,<br>pipe1,pipe2,------etc.<br>],<br>
+	            	<b>Imports:</b>[<br>BrowserModule,<br>module1,<br>module2,etc<br>]<br>
+                <b>providers:</b>[<br>http,service1,<br>service2,---etc<br>]<br>
+                <b>bootstrap:</b>[<br>app component<br>]<br>})<br>
+               </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeveen">
+                  7)What is Difference between Declarations,Imports,Providers in Module?
+              </a>
+          </div>
+          <div id="collapseSeveen" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                <b>i)Declarations:</b><br>we can list the components,directives,pipes that are part of the modules in the declaration way.<br><b>ii)Imports:</b><br>we can import other modules by listing them in the import array<b><br>iii)Providers:</b><br>we can list the services that are part of the module in the providers array.<br>
+                <b>syntax:</b><br>@Ngmodule((<b>declarations:</b>[ <br>app component,<br>component1,component2,----etc,<br>directive1,directive2,-----etc,<br>pipe1,pipe2,------etc.<br>],<br>
+	            	<b>Imports:</b>[<br>BrowserModule,<br>module1,<br>module2,etc<br>]<br>
+                <b>providers:</b>[<br>http,service1,<br>service2,---etc<br>]<br>
+                <b>bootstrap:</b>[<br>app component<br>]<br>})<br>
+               </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+                  8) What is Directive?What are the advantages?
+              </a>
+          </div>
+          <div id="collapseEight" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                  <b>Directives:</b> directives are used for manuplation of DOM<br>
+                  There are three kinds of directives in Angular<br><b>i)Components directive:</b> Components directives are used to create HTMLtemplate.<br><b>ii)Structural directives:</b> It change the DOM layout by adding and removing DOM elements.<br><b>iii)Attribute directives:</b> It change the appearance or behavior of an element, component, or another directive.<br> 
+                  <b>Advantages of Directive:</b><br>-->code modularity and <br>-->Reusability
+               </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+                  9) What are Structural Directives?Explain Briefly?
+              </a>
+          </div>
+          <div id="collapseNine" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                  <b>Structural directives:</b> Structural directives are responsible for HTML layout. <br>They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements.<br>-->Structural directives are easy to recognize. An asterisk (*) precedes the directive attribute name as in this <b>example:</b>*ngIf <br>-->three common predefined structural directives are NgIf, NgFor, and NgSwitch. <br> --> we can create custom directives  using @Directive decorator.<br>
+                  <b>Example:</b><br>import ( Component } from '@angular/core';<br>@Component((<br><b>selector</b>: 'app-punna',<br> <b>template:</b> `<div  *ngIf="show elements">Show the element this contex</div><br>
+                <!-- <div  [ng Switch]="Course"><br><p  *ngSwitchCase="java"> Course java selected</p><br><p  *ngSwitchCase="angular"> Course angular selected</p><br><p  *ngSwitchDefault>no Course is selected</p><br></div><br><ul><br><li *ngFor="Let name of names">((name}}</li><br></ul>`<br><b>styleUrls:</b>['./app.component.css']<br>})<br> -->
+        <!-- export class App-Punna {
+                   public showElement:boolean=true //if boolean=false it will not show the contex
+                   public course:string="java"
+                   public name:string[]=["punna","chiru","ravi"]
+                         } --> 
+               </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTen">
+                  10) What Is Component? Explain with Example? 
+              </a>
+          </div>
+          <div id="collapseTen" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                  <b>Component:</b>component is a simple class which is associated with angular template and business logic.<br>--> component class include properties and methods.<br>--> every angular application contains at least one component i.e, app/root component.<br>--> component is invoked through custom tag/selector<br>-->if we want to create new component we use @component decorator.<br>
+                  <!-- <b><u>component creation:</u></b><br><b>step 1:</b>create component class<br>export class componentname(Getsure component){}<br><b>step 2:</b>Add the component decorator.<br>@component()<br><b>step 3:</b> import the component from angular/core<br>import ( component }from './angular/core' -->
+                  <!-- <b><u>registration:</u></b><br><b>step 1:</b>registr our component in app.module at declarations.<br>declarations:[Getsure component].<br>import ( component } from './angular/core'<br> -->
+                  <!-- <b><u>access componet:</u></b><br>we need to access the component<br>
+               -->
+               </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseEleven">
+                  11)Differences between Component and Directives?
+              </a>
+          </div>
+          <div id="collapseEleven" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                <table>
+                    <tr>
+                        <th style="text-align:center">Component</th>
+                        <th style="text-align:center">Directive</th>
+                    </tr>
+                    <tr>
+                        <td>1)For register component we use@Component meta-data annotation.</td>
+                        <td>1)For register directives we use @Directive meta-data annotation.</td>
+                    </tr>
+                    <tr>
+                        <td>2)Component is a directive which use shadow DOM to create  encapsulate visual behavior called components Components are typically used to create UI widgets.</td>
+                        <td>2)Directives is used to add behavior to an existing DOM element..</td>
+                    </tr>
+                    <tr>
+                        <td>3)Component is used to break up the application into smaller components.</td>
+                        <td>3)Directive is use to design re-usable components.</td>
+                    </tr>
+                    <tr>
+                        <td>4)Only one component can be present per DOM element.</td>
+                        <td>4)templateurl or template are not mandatory in the component.</td>
+                    </tr>
+                    <tr>
+                        <td>5)@View decorator or templateurl template are mandatory in the component.</td>
+                        <td>5)Directive don’t have View.</td>
+                    </tr>
+                    <tr>
+                        <td>6)Component is used to define pipes.</td>
+                        <td>4)You can’t define Pipes in directive</td>
+                    </tr>
+                </table>
+               </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTweleve">
+                  12) What are AttributeDirectives?Explain Types?
+              </a>
+          </div>
+          <div id="collapseTweleve" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                   The attribute directive changes the appearance or behavior of a DOM element.<br>--> These directives look like regular HTML attributes in templates.<br>-->The ngModel directive which is used for two-way is an example of an attribute directive.<br>Some of the other attribute directives are listed below.<br>--><b>NgStyle:</b> Based on the component state, dynamic styles can be set by using NgStyle.Many inline styles can be set simultaneously by binding to NgStyle.<br>--><b>NgClass:</b> It controls the appearance of elements by adding and removing CSS classes dynamically.
+               </div>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThirteen">
+                  13) Difference between Constructor and ngOninit?
+              </a>
+          </div>
+          <div id="collapseThirteen" class="collapse" data-parent="#accordion">
+               <div class="card-body">
+                  <b>Constructor :</b><br>--> The Constructor is a default method of the class that is executed when the class is instantiated.<br>--> Dependency Injection can be done by using the constructor
+                  <b>ngOninit:</b><br>--> oninit is component'lifecycle hook which runs first after constructor when component is initialized.<br>--> Oninit allow us initilization processing relies on binding of component
+               </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+  
+
+      
+  

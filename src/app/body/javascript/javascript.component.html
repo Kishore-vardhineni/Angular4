@@ -1,0 +1,226 @@
+<h1>
+  Welcome To {{name}}
+</h1>
+  
+  <div class="container">
+     <div id="accordion">
+         <div class="card">
+             <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    1)What is javascript? What are the advantages and disadvantages of javascript?
+                </a>
+             </div>
+             <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                 <div class="card-body">
+                    <b>JavaScript: </b><br/>i) The main purpose of the JS is behavior of the web page.<br/>ii) It is a client side scripting language.<br/>iii) It is used to create interactive websites.<br/>iv) It is case sensitive.<br/>
+                <b>Advantages:</b><br/>i) Client side validations<br/>ii) No server burde <br/> iii) Develop desktop Widgets <br/>iv) Display Popup and Dialog boxes.<br/>
+                <b>DisAdvantages:</b><br/>i) Cross Browser Dependent Issues<br/>ii) If we disables JavaScript, then there is no action events.<br/>iii) No security code.          
+                 </div>
+             </div>
+         </div>
+  
+         <div class="card">
+             <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                    2)What is difference between null and undefined?
+                </a>
+             </div>
+             <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    <b>Null:</b> There are two features of null you should understand:<br/>i) null is an empty or non-existent value.<br/>ii) null must be assigned.
+                    <b>Example:</b><br/> let a = null;<br/>console.log(a)  <b>// null</b><br/>
+                    <b>Undefined:</b> Undefined most typically means a variable has been declared, but not defined. <br/>
+                    <b>Example:</b> <br/>  let b;<br/>console.log(b);  <b>// undefined</b>
+                 </div>
+             </div>
+         </div>
+         
+         <div class="card">
+            <div class="card-header">
+               <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  3) What is difference between == and ===?
+               </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    == specify compare the values but doesn’t specify the datatypes.<br/>
+                  <b>Example:</b><br/>var a=10, b=”10”; <br/> 
+                      If(a==b)(
+                        ---------     <b>// True executed this block</b>
+                      ) <br/>
+                ===  specify compare the values and specify the datatypes<br/>
+                 <b>Example:</b><br/>
+                     var a=10, b=”10”;  <br/>
+                    If(a===b)  (
+                      ---------     <b>//  false not executed this block</b>
+                    )
+                </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                    4) What are the data types used in java script?
+                </a>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    Java script data types are 2 types <br/>i)<b>Primitive type:</b> Number, Boolean , Null , Undefined, String.<br/>ii)	<b>Non-Primitive type:</b> Object , Array, Regular Expression<br/>
+                    <b>Example:</b><br/> var length = 16;  <b>// Number</b> <br/> var lastName = "info"; <b>// String</b><br/> var person; <b>// undefined</b><br/> var person = null;<b>// null</b><br/>var y = true;<b>// Boolean</b><br/>var course = ["java", ".net", "UI"]; <b>// Array</b><br/>var x = (firstName:"getsure", lastName:"info"); <b>// Object</b><br/>var patt = /getsure/ig; <b>// RegExp</b> 
+                </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+               <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                  5) What is object? How many ways to create object in java script?
+               </a>
+            </div>
+            <div id="collapseFive" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <b>Object:</b>JavaScript objects are combination of properties (key & value) and methods. The    value can be a primitive type, an object or a function. Properties can be added, updated, removed at any time and some are read only.<br/>
+                    There are mainly 2 ways to create objects.<br/>i) Object literal<br/>ii) Object constructor (using new keyword)<br/>
+                    <b>Example:</b><br/>
+                    <i>
+                    <script>
+                        emp = {id: 1092, name: "Suresh Kumar",  salary: 40000}
+                      
+                        document.write(emp.id + " " + emp.name + " " + emp.salary);                     // Dot Notation 
+                        document.write("<br/>");
+                        document.write(emp["id"] + " " + emp["name"] + " " + emp["salary"]);  // Bracket Notation 
+                        document.write("<br/>");
+                        document.write(delete emp.id); 
+                        document.write(delete emp["id"]);                                             // deleting the id from emp
+                        document.write("<br/>");
+                        document.write(emp["id"] + " " + emp["name"] + " " + emp["salary"]); 
+                    
+                    </script>
+                   </i> 
+                       ->Object constructor:
+                       Realtime Example using Object constructor:
+                      -----------------------------------------
+                    
+                        <script>
+                        function emp(id,name,salary){
+                        this.id=id;
+                        this.name=name;
+                        this.salary=salary;
+                        }  
+                        var emp1=new emp(101,"Cherry",30000);
+                        var emp2=new emp(102,"Kiran",50000);
+                        document.write(emp1.id+" "+emp1.name+" "+emp1.salary);
+                        document.write(emp2.id+" "+emp2.name+" "+emp2.salary);
+                        </script>
+                </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                    6) Expalin about string methods?
+                </a>
+            </div>
+            <div id="collapseSix" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    <b><u>String Methods:</u></b><br>
+                    <b>charAt(index):</b>  method returns the character at the given index.<br/>var str="javascript"; <br/>document.write(str.charAt(2));   <b>// jav</b><br>
+                    <b>concat(str):</b> method() (or) + Symbol ->  concatenates or joins two strings.<br>var s1="javascript ";<br>var s2="getsure";<br>document.write("Result->"+ s1.concat(s2)+""); <br>document.write("Result->"+ s1+" "+s2);<br>
+                    <b>indexOf(str):</b> method returns the index position of the given string.<br>var s1="javascript from getsurejava";<br>var n=s1.indexOf("from");<br>document.write(n);<br>
+                    <b>lastIndexOf(str):</b> method returns the last index position of the given string.<br>var s1="javascript from getsurejava";<br>var n=s1.lastIndexOf("java");<br>document.write(n);<br>         
+                    <b>toLowerCase()/toUpperCase() toLowerCase():</b> method returns the given string in lowercase/uppercase letters.<br>var s1="JavaScript Info";<br>var s2=s1.toLowerCase();  //var s2 = s1.toUpperCase();<br>document.write(s2);<br>
+                    <b>trim():</b> method removes leading and trailing whitespaces from the string.<br>var s1="  getsure info";<br>var s2=s1.trim();<br>document.write(s2);	// getsure info <br>  
+                    <b>replace():</b> method replaces the value with specified value or regex.<br>var mystring = "Hello GetSure Hello Infotech"	;<br>var result = mystring.replace("Hello", "Hi");<br>//var result = mystring.replace(/Hello/gi, "Hi"); // g is global, i is case sensitive<br>alert(result);<br>
+                    <b>slice(beginIndex, endIndex):</b>  method returns the parts of string from given beginIndex to endIndex. In slice() method, beginIndex is inclusive and endIndex is exclusive.<br>var s1="getsureinfo";<br>var s2=s1.slice(2,5);<br>document.write(s2);<br>
+                 </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeveen">
+                    7) Expalin about array methods?
+                </a>
+            </div>
+            <div id="collapseSeveen" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    <b><u>ArrayMethods:</u></b> 
+                    <b>pop():</b> method removes the last element from an array.<br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.pop();  <b>// Removes the last element ("Mango") from fruits</b><br>
+                    <b>push():</b> method adds a new element to an array (at the end).<br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.push('graphes');  <b>// Add the graphes element after mango</b><br>
+                    <b>unshift():</b> Method is used to add new items to the beginning of an array.	<br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.unshift("Lemon","Pineapple");  <b>// Lemon,Pineapple,Banana,Orange,Apple,Mango</b><br>
+                    <b>shift():</b> Method is used to Remove the first item of an array.<br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.shift(); <b>// Orange,Apple,Mango</b><br>
+                    <b>delete fruits[0]:</b> is also used for delete the particular Index element.<br>             
+                    <b>splice():</b> method can be used to add /remove items to/from an array.<br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.splice(2, 0, "Lemon", "Kiwi");  <b>// 2 indicates index and 0 indicates how many elements u have to remove</b><br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.splice(0, 1);    <b>// Removes the first element of fruits</b><br>       
+                    <b>sort():</b> method sorts an array alphabetically.<br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.sort();    <b>// Sorts the elements of fruits</b><br>
+                    <b>reverse():</b> method reverses the elements in an array.<br>var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>fruits.sort();<b>// Sorts the elements of fruits</b><br>fruits.reverse();    <b>// Reverses the order of the elements</b><br>
+                    <b>concat():</b> method creates a new array by concatenating two arrays.<br>var arr1 = ["getsure", "infotech"];<br>var arr2 = ["chiru", "uday","kiran"];<br>var arr3 = ["srikanth", "avinash"];<br>var myChildren = arr1.concat(arr2, arr3);<b>// Concatenates arr1 with arr2 and arr3</b><br>
+                    <b>slice():</b> method slices out a piece of an array into a new array.<br>var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango", "graphes"];<br>var citrus = fruits.slice(1, 4); <b>// from 1st index to 3rd index but in slice() last index is excluding</b><br>
+                 </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+                    8) Explain about object methods freeze and seal methods?
+                </a>
+            </div>
+            <div id="collapseEight" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    <b>Object.freeze():</b> method  freezes an object: that is, prevents new properties from being added to it; prevents existing properties from being removed; and prevents existing properties, or their enumerability, configurability, or writability, from being changed, it also prevents the prototype from being changed. The method returns the passed object.<br>
+                    <b>Example:</b><br>const object1 = (property1: 42);<br>const object2 = Object.freeze(object1);<br>object2.property1 = 33;  <b>// Throws an error in strict mode</b><br>console.log(object2.property1);<b>// expected output: 42</b><br>  
+                    <b>Object.seal():</b> method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.<br>
+                    <b>Example:</b><br>const object1 = (property1: 42);<br>Object.seal(object1);<br>object1.property1 = 33;<br>console.log(object1.property1);<b>// expected output: 33</b><br>delete object1.property1;   <b>// cannot delete when sealed</b><br>console.log(object1.property1);  <b>// expected output: 33</b>
+                 </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+                    9) What is a closure? Explain briefly?
+                </a>
+            </div>
+            <div id="collapseNine" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    Closure is an inner function which has access to <br>1. Its own variables.<br>2. Outer function variables, as well as its parameters.<br>3. Global variables.<br>
+                 </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTen">
+                    10) Does typescript supports functions overloading? Why not JavaScript?
+                </a>
+            </div>
+            <div id="collapseTen" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    Yes. Typescript supports function overloading means writing multiple methods with same name but different parameters (or) arguments. Type script supports function overloading based on number of parameters.
+                 </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseEleven">
+                    11) What is lambda expressions?
+                </a>
+            </div>
+            <div id="collapseEleven" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    Lambda expressions refers to anonymous functions in programming. These functions are also called as Fat Arrow functions. It reduce the number of lines of code and performance increase the application.<br/>
+                    <b>Lambda Expression:</b>
+                    It is an anonymous function expression that points to a single line of code. Its syntax is as follows −
+                    ( [param1, parma2,…param n] )=>statement;<br/>
+                    <b>Example:</b>
+                    var foo = (x:number)=>10 + x 
+                    console.log(foo(100))      //outputs 110 
+                 </div>
+            </div>
+        </div>
+        
+    </div>
+  </div>

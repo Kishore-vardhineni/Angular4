@@ -1,0 +1,219 @@
+<h1>
+    Welcome To {{name}}
+  </h1>
+  
+  <div class="container">
+     <div id="accordion">
+         <div class="card">
+             <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    1) What are new futures of HTML5?
+                </a>
+             </div>
+             <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                 <div class="card-body">
+                    <p>New <b>semantic elements</b> like <code><b>&lt;header&gt;, &lt;footer&gt;, &lt;article&gt;,and &lt;section&gt; </b></code> <br>
+                    New <b>attributes of form elements</b> like number, date, time, calendar, and range.<br>
+                    New <b>graphic elements</b> like <code><b>&lt;svg&gt;, &lt;canvas&gt;</b></code><br>
+                    New <b>multimedia elements</b> like <code><b>&lt;audio&gt;, &lt;video&gt;</b></code></p>                
+                 </div>
+             </div>
+         </div>
+
+         <div class="card">
+             <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                    2) What is difference between LocalStorage and cookies?
+                </a>
+             </div>
+             <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    <table>
+                        <tr>
+                           <th style="text-align:center">Local storage:</th>
+                           <th style="text-align:center">Cookies:</th>
+                       </tr>
+                       <tr>
+                           <td>1)Local storage stores the data in the form of key and value.</td>
+                           <td>1)Good for small amount of data.</td>
+                       </tr>
+                       <tr>
+                          <td>2)The data is stored for longer duration and remains in the browser unless user delete it explicitly, it remains even after computer restart.</td>
+                          <td>2)Difficult to work with JavaScript.</td>
+                       </tr>
+                       <tr>
+                           <td>3)No way to specify the time out period as the Cookies have.</td>
+                           <td>3)All data is transferred to and from server, so bandwidth is consumed on every request.</td>
+                       </tr>
+                       <tr>
+                           <td>4)Good to store large amount of data, up to 4MB.</td>
+                           <td>4)Can specify timeout period so that cookies data are removed from browser.</td>
+                       </tr>
+                       <tr>
+                          <td>5)Easy to work with the JavaScript.</td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td>6)Local storage data is not sent to the server on every request (HTTP header) as it is purely at the client side.</td>
+                          <td></td>
+                      </tr>
+                     </table>
+                 </div>
+             </div>
+         </div>
+         
+         <div class="card">
+            <div class="card-header">
+               <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                  3) What is difference between LocalStorage and cookies?
+               </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <table>
+                        <tr>
+                           <th style="text-align:center">LocalStorage</th>
+                           <th style="text-align:center">sessionStorage</th>
+                       </tr>
+                       <tr>
+                           <td>1)Web storage can be viewed simplistically as an improvement on cookies, providing much greater storage capacity. Available size is 5MB which considerably more space to work with than a typical 4KB cookie.</td>
+                           <td>1)It is similar to localStorage.</td>
+                       </tr>
+                       <tr>
+                          <td>2)The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) - reducing the amount of traffic between client and server.</td>
+                          <td>2)Changes are only available per window (or tab in browsers like Chrome and Firefox). Changes made are saved and available for the current page, as well as future visits to the site on the same window. Once the window is closed, the storage is deleted.</td>
+                       </tr>
+                       <tr>
+                           <td>3)The data stored in localStorage persists until explicitly deleted. Changes made are saved and available for all current and future visits to the site.</td>
+                           <td>3)The data is available only inside the window/tab in which it was set.</td>
+                       </tr>
+                       <tr>
+                           <td>4)It works on same-origin policy. So, data stored will only be available on the same origin.</td>
+                           <td>4)The data is not persistent i.e. it will be lost once the window/tab is closed. Like localStorage, it works on same-origin policy. So, data stored will only be available on the same origin.</td>
+                       </tr>
+                     </table>
+                </div>
+            </div>
+        </div>
+  
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                    4) What is difference between svg and canvas?
+                </a>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                 <div class="card-body">
+                    <table>
+                       <tr>
+                          <th style="text-align:center">SVG</th>
+                          <th style="text-align:center">Canvas</th>
+                      </tr>
+                      <tr>
+                          <td>1)SVG has better scalability. So it can be printed with high quality at any resolution.</td>
+                          <td>1)Canvas has poor scalability. Hence it is not suitable for printing on higher resolution.</td>
+                      </tr>
+                      <tr>
+                         <td>2)SVG gives better performance with smaller number of objects or larger surface.</td>
+                         <td>2)Canvas gives better performance with smaller surface or larger number of objects.</td>
+                      </tr>
+                      <tr>
+                          <td>3)SVG can be modified through script and CSS.</td>
+                          <td>3)Canvas can be modified through script only.</td>
+                      </tr>
+                      <tr>
+                          <td>4)SVG is vector based and composed of shapes.</td>
+                          <td>4)Canvas is raster based and composed of pixel.</td>
+                      </tr>
+                    </table>
+                 </div>
+            </div>
+        </div>
+        
+        <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                        5) What is the difference between Inline and Block level-elements?
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                     <div class="card-body">
+                        <table>
+                           <tr>
+                              <th style="text-align:center">Inline</th>
+                              <th style="text-align:center">Block</th>
+                          </tr>
+                          <tr>
+                              <td>1)HTML inline level elements can appear in the body of an HTML page.</td>
+                              <td>1)HTML block level elements can appear in the body of an HTML page.</td>
+                          </tr>
+                          <tr>
+                             <td>2)It can contain data and other inline elements.</td>
+                             <td>2)It can contain another block level as well as inline elements.</td>
+                          </tr>
+                          <tr>
+                              <td>3)By default, inline elements do not begin on new lines.</td>
+                              <td>3)By default, block-level elements begin on new lines.</td>
+                          </tr>
+                          <tr>
+                              <td>4)inline elements create shorter structures (than block level elements).</td>
+                              <td>4) block level elements create larger structures (than inline elements).</td>
+                          </tr>
+                          <tr>
+                        <td>5)<b>Examples:</b><code>&lt;header&gt;,&lt;span&gt;,&lt;b&gt;,&lt;em&gt;,&lt;i&gt;,&lt;cite&gt;,&lt;mark&gt;,&lt;code&gt;</code></td>
+                            <td>5)<b>Examples:</b><code>&lt;p&gt;,&lt;div&gt;,&lt;form&gt;,&lt;header&gt;,&lt;nav&gt;,&lt;ul&gt;,&lt;li&gt;,&lt;h1&gt;</code></td>
+                          </tr>
+                        </table>
+                     </div>
+                </div>
+            </div>
+
+            <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                            6) What is the difference between div and span?
+                        </a>
+                    </div>
+                    <div id="collapseSix" class="collapse" data-parent="#accordion">
+                         <div class="card-body">
+                            <table>
+                               <tr>
+                                  <th style="text-align:center">Div</th>
+                                  <th style="text-align:center">Span</th>
+                              </tr>
+                              <tr>
+                                  <td>1)div tag is a block-level element, so a rectangular object which can not be broken over several lines.</td>
+                                  <td>1)span tag is a inline elements.</td>
+                              </tr>
+                              <tr>
+                                 <td>2)It is a rectangular object which can not be broken over several lines.</td>
+                                 <td>2)It can be placed inside a paragraph to define a part of it without affecting the appearance of the text.</td>
+                              </tr>
+                              <tr>
+                                  <td>3)Two block level elements (divs) will be displayed one after each other vertically.</td>
+                                  <td>3)whereas two inline elements (spans) will be displayed one after each other horizontally.</td>
+                              </tr>
+                              <tr>
+                                  <td>4)div element as a paragraph: divs are generally used for laying out blocks of content.</td>
+                                  <td>4)Spans are normally used for highlighting groups of words within that content.</td>
+                              </tr>
+                            </table>
+                         </div>
+                    </div>
+                </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeveen">
+                        7) What Is Geoloaction in HTML5? Give me example? 
+                    </a>
+                </div>
+                <div id="collapseSeveen" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>The HTML5 geolocation feature lets you find out the geographic coordinates (latitude and longitude numbers) of the current location of your website's visitor. This feature is helpful for providing better browsing experience to the site visitor. For example, you can return the search results that are physically close to the user's location.</p>
+                    </div>
+                </div>
+            </div>
+               
+    </div>
+  </div>

@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="card">
+            <div class="col-xs-4">
+                <div class="col-xs-12">
+                    <div class="sidebarContent">
+                        <img src="../assets/Images/bird.jpg" width="150px" height="200px" class="image"/>
+                        <ul>
+                            <li><a routerLink="Independence" routerLinkActive="active">Independence</a></li>
+                            <li><a routerLink="krishna" routerLinkActive="active">KrishnaAstami</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="card">
+            <div class="col-xs-8">
+               <div class="mainContent">
+                 <h1>Welcome To {{name}}</h1>
+                    <div [ngClass] = "'child-container'">	
+                        <router-outlet></router-outlet>	
+                    </div>
+                    <div>
+                       <label>Country:</label>  
+                        <select [(ngModel)]="selectedCountry.id" (change)="onSelectCountry($event.target.value)">  
+                            <option value="0">--Select Country--</option>  
+                            <option *ngFor="let country of countries" value={{country.id}}>{{country.name}}</option>  
+                        </select>  
+                        <br /><br />  
+                    <div>  
+                        <label>State:</label>  
+                        <select>  
+                            <option *ngIf='selectedCountry.id == 0' value="0">--Select State--</option>  
+                            <option *ngFor="let state of states " value={{state.id}}>{{state.name}}</option>  
+                        </select>  
+                    </div>
+                                 
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+    
+     
+    
+    
+
+<!--
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->

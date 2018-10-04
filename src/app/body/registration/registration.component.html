@@ -1,0 +1,78 @@
+<div class="container"> 
+    <h2>User Registration Form</h2>
+    <ul>
+        <li><a routerLink="Dotnet" routerLinkActive="active">DotNet</a></li>
+    </ul>  
+    <div [ngClass] = "'child-container'">	
+        <router-outlet></router-outlet>	
+    </div>
+
+    <button>Click</button>
+    <!-- <form [formGroup]="userForm" (ngSubmit)="onSubmit()" style="width:50%">
+         <div class=" form-group">
+           <label>Name:</label>
+             <input type="text" placeholder="Name" formControlName="name" class="form-control">
+               <div *ngIf="userForm.controls['name'].hasError('required')" class="alert alert-danger">Please Enter Name</div>
+               <div *ngIf="userForm.controls['name'].hasError('minlength')" class="alert alert-danger">Please Enter atleaset 4 characters</div>
+               <div *ngIf="userForm.controls['name'].hasError('maxlength')" class="alert alert-danger">Please Enter up to 10 alphabets only</div>
+               <div *ngIf="userForm.controls['name'].hasError('pattern')" class="alert alert-danger">Please Enter only alphabates</div>
+         </div>
+         <div class="form-group"> 
+            <label>Contact:</label>
+            <input type="text" placeholder="ContactNumber" formControlName="contact" required class="form-control" >
+            <div *ngIf="userForm.controls['contact'].hasError('required')" class="alert alert-danger">Please Enter Contact Number</div>
+            <div *ngIf="userForm.controls['contact'].hasError('minlength')" class="alert alert-danger">Please Enter 10 digit mobilenumber</div>
+            <div *ngIf="userForm.controls['contact'].hasError('pattern')" class="alert alert-danger">Please Enter only digit</div>
+         </div>
+         <div class="form-group">
+            <label>Email:</label>
+            <input type="text" placeholder="Email" formControlName="email" required class="form-control" >
+            <div *ngIf="userForm.controls['email'].hasError('required')" class="alert alert-danger">Please Enter Email</div>
+            <div *ngIf="userForm.controls['email'].hasError('pattern')" class="alert alert-danger">Please Enter valid Email</div>
+         </div>
+         <div class="form-group">
+            <label>Gender:</label> 
+           <input type="radio" formControlName="gender" value="male"> Male
+           <input type="radio" formControlName="gender" value="female" > Female
+         </div>
+         <div formGroupName="Address">
+            <div  class="form-group"> 
+                <label>Street:</label>
+                <input type="text" placeholder="Street" formControlName="street" required class="form-control" >
+                <div *ngIf="userForm.controls['Address'].controls['street'].hasError('required')" class="alert alert-danger">Please Enter Street Name</div>
+            </div>  
+         </div>
+       <button [disabled]="!userForm.valid" type="submit" class="btn btn-success">Submit</button>  
+    </form> -->
+
+
+    <form [formGroup]="userForm2" (ngSubmit)="onSubmit()" style="width:50%">
+        <div class=" form-group">
+          <label>Name:</label>
+            <input type="text" placeholder="Name" formControlName="name" class="form-control">
+              <div *ngIf="userForm2.controls['name'].hasError('required')" class="alert alert-danger">Please Enter Name</div>
+              <div *ngIf="userForm2.controls['name'].hasError('minlength')" class="alert alert-danger">Please Enter atleaset 4 characters</div>
+              <div *ngIf="userForm2.controls['name'].hasError('maxlength')" class="alert alert-danger">Please Enter up to 10 alphabets only</div>
+              <div *ngIf="userForm2.controls['name'].hasError('pattern')" class="alert alert-danger">Please Enter only alphabates</div>
+        </div>
+        <div class="form-group"> 
+           <label>Contact:</label>
+           <input type="text" placeholder="ContactNumber" formControlName="contact" required class="form-control" >
+           <div *ngIf="userForm2.controls['contact'].hasError('required')" class="alert alert-danger">Please Enter Contact Number</div>
+           <div *ngIf="userForm2.controls['contact'].hasError('minlength')" class="alert alert-danger">Please Enter 10 digit mobilenumber</div>
+           <div *ngIf="userForm2.controls['contact'].hasError('pattern')" class="alert alert-danger">Please Enter only digit</div>
+        </div>
+        <div class="form-group">
+           <label>Email:</label>
+           <input type="text" placeholder="Email" formControlName="email" required class="form-control" >
+           <div *ngIf="userForm2.controls['email'].hasError('required')" class="alert alert-danger">Please Enter Email</div>
+           <div *ngIf="userForm2.controls['email'].hasError('pattern')" class="alert alert-danger">Please Enter valid Email</div>
+        </div>
+        <div class="form-group">
+           <label>Gender:</label> 
+          <input type="radio" formControlName="gender" value="male"> Male
+          <input type="radio" formControlName="gender" value="female" > Female
+        </div>
+        <button [disabled]="!userForm2.valid" type="submit" class="btn btn-success">Submit</button>  
+   </form>
+ </div>
